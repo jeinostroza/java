@@ -78,6 +78,11 @@ public class Queries {
 		String pass= "java";
 		String ch_acc = null;
 		String sv_acc = null;
+		street = null;
+		city = null;
+		zip_code = null;
+		state = null;
+		username = null;
 //		String balance_ch = null;
 //		String balance_sv = null;
 		int id_client = 0;
@@ -120,7 +125,7 @@ public class Queries {
 			while(result2.next()) {
 				sum_sv = result2.getString(1);
 			}
-
+			if(id_client != 0) {
 				System.out.println("Id Client: " + id_client);
 				System.out.println("First name: " + first_name);
 				System.out.println("Last name: " + last_name);
@@ -135,7 +140,10 @@ public class Queries {
 				System.out.println("Balance: " + sum_sv);
 				System.out.println("=================================");
 				System.out.println(" ");
-				
+			}else {
+				System.out.println("Please enter a valid client");
+				System.out.println("");
+			}
 			
 																
 			connection.close();

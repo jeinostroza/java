@@ -27,7 +27,7 @@ public class BankManager {
 			Signin signin = new Signin();
 			Scanner scanner = new Scanner(System.in);
 			
-			System.out.println("JAVA BANK APP");
+			System.out.println("JEI BANK");
 			System.out.println("");
 			System.out.println("Please Select and option");
 			System.out.println("1.- Employee");
@@ -61,8 +61,7 @@ public class BankManager {
 				String empOpt = scanner.nextLine();
 				switch(empOpt) {
 				case "1":
-					options.approve();
-				
+					options.approve();				
 				break;
 				
 				case "2":
@@ -74,7 +73,7 @@ public class BankManager {
 				break;
 				
 				case "4":
-					System.out.println("HAVE A NICE DAY. SEE YOU TOMORROW :)");
+					System.out.println("HAVE A NICE DAY. SEE YOU SOON :)");
 					return;
 				}
 				}
